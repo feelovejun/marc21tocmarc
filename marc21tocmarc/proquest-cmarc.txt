@@ -1,0 +1,85 @@
+000    cam0 22002651  4500
+001    EBC225218
+010 1  $z0387229140$belectronic bk.
+010 1  $z0387228489
+100    $a20171208d2005    k  y0engy01      b
+101 0  $aeng
+102    $aus$bma
+105    $ay   a   001yy
+135    $av
+200 1  $aActivist business ethics$fby Jacques Cory
+204 1  $aelectronic resource
+210    $aBoston$cKluwer Academic Publishers$aNorwell, Mass.$cDistributors for North, Central, and South America, Kluwer Academic Publishers$dc2005
+215 1  $a200 p.
+300    $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2015. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries
+320    $aIncludes bibliographical references and index
+606    $2lc$aBusiness ethics
+606    $2lc$aProfessional ethics
+610  1 $aElectronic books
+676    $a174/.4$v21
+680    $aHF5387$b.C6756 2005
+700  1 $aCory$bJacques
+712 02 $aProQuest (Firm)
+856 40 $uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=225218$zClick to View
+
+
+000    cam0 22002651  4500
+001    EBC1323348
+010 1  $z9780415837651
+010 1  $z9781444170450
+010 1  $z9780203783863$be-book
+100    $a20171208d2014    k  y0engy01      b
+101 0  $aeng
+102    $agb
+105    $aa   a   001yy
+135    $av
+200 1  $aBusiness economics$fRob Dransfield
+204 1  $aelectronic resource
+210    $aOxfordshire, England$aNew York$cRoutledge$dc2014
+215 1  $a1 online resource (xxx, 486 p.)$cill. (some col.), graphs
+225 1  $a360 degree series
+300    $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2015. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries
+300    $aDescription based on online resource; title from title page (ebrary, viewed August 12, 2013)
+320    $aIncludes bibliographical references at the end of each chapters and index
+606    $2lc$aManagerial economics
+610  1 $aElectronic books
+676    $a338.5$v23
+680    $aHD30.22$b.D73 2014
+700  1 $aDransfield$bRobert$f1952-
+712 02 $aProQuest (Firm)
+856 40 $uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=1323348$zClick to View
+
+
+000    cam0 22002651  4500
+001    EBC4512595
+010 1  $z9780813565941
+010 1  $z9780813565934
+010 1  $a9780813565958$be-book
+010 1  $z9780813575735$bepub
+100    $a20171208d2016    k  y0engy01      b
+101 0  $aeng
+102    $aus$bnj
+105    $ay   a   001yd
+135    $av
+200 1  $aJuntures in women's leadership$ebusiness$fedited by Lisa Hetfield and Dana M. Britton
+204 1  $aelectronic resource
+210    $aNew Brunswick, New Jersey$aLondon, [England]$cRutgers University Press$d2016
+215 1  $a1 online resource (240 pages)
+225 1  $aJunctures: Case Studies in Women's Leadership
+300    $aDescription based on print version record
+300    $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2016. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries
+320    $aIncludes bibliographical references at the end of each chapters and index
+606    $2lc$aWomen executives$yUnited States
+606    $2lc$aLeadership in women$yUnited States
+606    $2lc$aSocial responsibility of business$yUnited States
+607    $2lc$aUnited States$xBiography
+610  1 $aElectronic books
+660    $an-us---
+676    $a338.092/520973$v23
+680    $aHD6054.4.U6$b.J86 2016
+700  1 $aHetfield$bLisa
+700  1 $aBritton$bDana M.
+712 02 $aProQuest (Firm)
+856 40 $uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=4512595$zClick to View
+
+
