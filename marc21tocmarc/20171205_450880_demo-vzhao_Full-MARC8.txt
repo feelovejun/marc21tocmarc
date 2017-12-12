@@ -1,0 +1,98 @@
+LEADER 01287nam  2200337Ia 4500
+001 EBC225218
+003 MiAaPQ
+006 m     o  d |      
+007 cr cn|||||||||
+008 010918s2005    mau     sb    001 0 eng d
+020   $z0387229140 (electronic bk.)
+020   $z0387228489
+035   $a(MiAaPQ)EBC225218
+035   $a(Au-PeEL)EBL225218
+035   $a(CaPaEBR)ebr10139625
+035   $a(CaONFJC)MIL41259
+035   $a(OCoLC)71365518
+040   $aMiAaPQ$cMiAaPQ$dMiAaPQ
+050  4$aHF5387$b.C6756 2005
+082 04$a174/.4$221
+100 1 $aCory, Jacques.
+245 10$aActivist business ethics$h[electronic resource] /$cby Jacques Cory.
+260   $aBoston :$bKluwer Academic Publishers ;$aNorwell, Mass. :$bDistributors for North, Central, and South America, Kluwer Academic Publishers,$cc2005.
+300   $a200 p.
+504   $aIncludes bibliographical references and index.
+533   $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2015. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries.
+650  0$aBusiness ethics.
+650  0$aProfessional ethics.
+655  4$aElectronic books.
+710 2 $aProQuest (Firm)
+856 40$uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=225218$zClick to View
+
+LEADER 01425nam  2200361 a 4500
+001 EBC1323348
+003 MiAaPQ
+006 m     o  d |      
+007 cr cn|||||||||
+008 130812s2014    enka    sb    001 0 eng d
+020   $z9780415837651
+020   $z9781444170450
+020   $z9780203783863 (e-book)
+035   $a(MiAaPQ)EBC1323348
+035   $a(Au-PeEL)EBL1323348
+035   $a(CaPaEBR)ebr10737967
+035   $a(CaONFJC)MIL506478
+035   $a(OCoLC)893336054
+040   $aMiAaPQ$cMiAaPQ$dMiAaPQ
+050  4$aHD30.22$b.D73 2014
+082 04$a338.5$223
+100 1 $aDransfield, Robert,$d1952-
+245 10$aBusiness economics$h[electronic resource]$cRob Dransfield.
+260   $aOxfordshire, England ;$aNew York :$bRoutledge,$cc2014.
+300   $a1 online resource (xxx, 486 p.) :$bill. (some col.), graphs.
+490 0 $a360 degree series
+504   $aIncludes bibliographical references at the end of each chapters and index.
+533   $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2015. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries.
+588   $aDescription based on online resource; title from title page (ebrary, viewed August 12, 2013).
+650  0$aManagerial economics.
+655  4$aElectronic books.
+710 2 $aProQuest (Firm)
+856 40$uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=1323348$zClick to View
+
+LEADER 02070nam  2200493 i 4500
+001 EBC4512595
+003 MiAaPQ
+006 m     o  d |      
+007 cr cnu||||||||
+008 160530t20162016nju     ob    001 0deng d
+020   $z9780813565941
+020   $z9780813565934
+020   $a9780813565958 (e-book)
+020   $z9780813575735 (epub)
+035   $a(MiAaPQ)EBC4512595
+035   $a(Au-PeEL)EBL4512595
+035   $a(CaPaEBR)ebr11208045
+035   $a(CaONFJC)MIL917482
+035   $a(OCoLC)950463695
+040   $aMiAaPQ$beng$erda$epn$cMiAaPQ$dMiAaPQ
+043   $an-us---
+050  4$aHD6054.4.U6$b.J86 2016
+082 0 $a338.092/520973$223
+245 00$aJuntures in women's leadership :$bbusiness /$cedited by Lisa Hetfield and Dana M. Britton.
+264  1$aNew Brunswick, New Jersey ;$aLondon, [England] :$bRutgers University Press,$c2016.
+264  4$cÃ2016
+300   $a1 online resource (240 pages).
+336   $atext$2rdacontent
+337   $acomputer$2rdamedia
+338   $aonline resource$2rdacarrier
+490 0 $aJunctures: Case Studies in Women's Leadership
+504   $aIncludes bibliographical references at the end of each chapters and index.
+588   $aDescription based on print version record.
+590   $aElectronic reproduction. Ann Arbor, MI : ProQuest, 2016. Available via World Wide Web. Access may be limited to ProQuest affiliated libraries.
+650  0$aWomen executives$zUnited States.
+650  0$aLeadership in women$zUnited States.
+650  0$aSocial responsibility of business$zUnited States.
+651  0$aUnited States$vBiography.
+655  4$aElectronic books.
+700 1 $aHetfield, Lisa,$eeditor.
+700 1 $aBritton, Dana M.,$eeditor.
+776 08$iPrint version:$tJuntures in women's leadership : business.$dNew Brunswick, New Jersey ; London, [England] : Rutgers University Press, c2016 $hxviii, 219 pages $z9780813565941 $w2015024450
+797 2 $aProQuest (Firm)
+856 40$uhttp://ebookcentral.proquest.com/lib/demo-vzhao/detail.action?docID=4512595$zClick to View

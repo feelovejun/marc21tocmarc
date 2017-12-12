@@ -22,17 +22,16 @@ public class App
 {
     public static void main( String[] args ) throws IOException
     {
-        System.out.println( "Hello World!" );
         String marc21 = "";
         String filename ="20171205_450880_demo-vzhao_Full-MARC8";
         //filename = "20171117_423294_ntuedu_Full-MARC8";
         //filename = "proquest-Cmarc";
-        FileReader fr = new FileReader(filename +".mrc");
-        BufferedReader br = new BufferedReader(fr);
-        marc21 = br.readLine();
-        Marc m = new MarcImpl(marc21);
-        for(Field f : m.listFields())
-        System.out.println(f.getName() + ":" + f.getData());
+//        FileReader fr = new FileReader(filename +".mrc");
+//        BufferedReader br = new BufferedReader(fr);
+//        marc21 = br.readLine();
+//        Marc m = new MarcImpl(marc21);
+//        for(Field f : m.listFields())
+//        System.out.println(f.getName() + ":" + f.getData());
         
         MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
         while(mr.hasNext()) {
