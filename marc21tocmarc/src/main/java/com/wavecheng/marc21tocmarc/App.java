@@ -13,6 +13,9 @@ import org.marc4j.MarcReader;
 import org.marc4j.MarcStreamReader;
 import org.marc4j.marc.Record;
 import org.marc4j.util.JsonParser;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.slf4j.spi.LoggerFactoryBinder;
 
 import com.google.gson.Gson;
 import com.hw.lib.core.marc.Field;
@@ -25,6 +28,8 @@ import com.hw.lib.core.marc.impl.MarcImpl;
  */
 public class App 
 {
+	private static Logger log = LoggerFactory.getLogger(App.class);
+	
     public static void main( String[] args ) throws IOException
     {
         String marc21 = "";
@@ -88,6 +93,7 @@ public class App
         TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);
         System.out.println(trr.getTransRules());
         
+        log.info("something test");
     }
     
     
