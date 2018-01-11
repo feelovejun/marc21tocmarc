@@ -1,0 +1,48 @@
+{
+    "transRules": [
+        {
+            "from": "050", 
+            "to": "680", 
+            "indi1From": "1", 
+            "indi1To": " ", 
+            "indi2From": " ", 
+            "indi2To": "1", 
+            "subfieldMapping": {
+                "a": "b", 
+                "b": "h"
+            }, 
+            "wholeFieldMapping": {
+                "4": "330a", 
+                "a": "843b"
+            }
+        }, 
+        {
+            "from": "050", 
+            "to": "680", 
+            "indi1From": "1", 
+            "indi1To": " ", 
+            "indi2From": " ", 
+            "indi2To": "1", 
+            "subfieldMapping": {
+                "a": "b", 
+                "b": "h"
+            }, 
+            "wholeFieldMapping": {
+                "4": "330a", 
+                "a": "843b"
+            }
+        }
+    ], 
+    "replaceRules": [
+        {
+            "field": "245a", 
+            "pattern": "[\\[|\\]]", 
+            "replacement": ""
+        }, 
+        {
+            "field": "245a", 
+            "pattern": "[\\[|\\]]", 
+            "replacement": ""
+        }
+    ]
+}

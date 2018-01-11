@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,6 +44,8 @@ public class App
         	System.out.println(r.toString());
         }   
         
+        TransRule tr = new TransRule();
+        
         FieldTransRule frule = new FieldTransRule();
         frule.setFrom("050");
         frule.setTo("680");
@@ -60,7 +63,7 @@ public class App
         whole.put("4", "330a");
         whole.put("a", "843b");
         frule.setWholeFieldMapping(whole);
-        frule.validateSubfieldsRule();
+        //frule.validateSubfieldsRule();
         
         Gson gson = new Gson();
         String json = gson.toJson(frule);
@@ -68,6 +71,23 @@ public class App
         
         FieldTransRule ff = gson.fromJson(json, FieldTransRule.class);
         System.out.println(ff);
+        
+        FieldReplaceRule frr = new FieldReplaceRule();
+        frr.setField("245a");
+        frr.setPattern("[\\[|\\]]");
+        frr.setReplacement("");
+        String strFrr = gson.toJson(frr);
+        System.out.println(strFrr);
+        
+        tr.setTransRules(Arrays.asList(frule,frule));
+        tr.setReplaceRules(Arrays.asList(frr,frr));
+        System.out.println(gson.toJson(tr));
+        System.out.println();
+        String path = App.class.getClassLoader().getResource("rules.json").getPath();
+        path = path;
+        TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);
+        System.out.println(trr.getTransRules());
+        
     }
     
     
