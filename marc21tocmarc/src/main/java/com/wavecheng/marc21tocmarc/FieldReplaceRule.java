@@ -1,5 +1,11 @@
 package com.wavecheng.marc21tocmarc;
 
+
+/**
+ * after trans rules to replace specific field values like [],(),etc
+ * @author boch
+ *
+ */
 public class FieldReplaceRule {
 
 	private String field;

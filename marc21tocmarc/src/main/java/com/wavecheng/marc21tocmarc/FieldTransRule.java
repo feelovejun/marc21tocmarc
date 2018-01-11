@@ -4,6 +4,11 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * field to field translate,including subfield to another whole field trans
+ * @author boch
+ *
+ */
 public class FieldTransRule {
 	private String from;
 	private String to;

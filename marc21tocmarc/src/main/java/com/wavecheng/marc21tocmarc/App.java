@@ -32,6 +32,21 @@ public class App
 	
     public static void main( String[] args ) throws IOException
     {
+    	if(args.length <2 ) {
+    		System.out.println("Usage: -input in.mrc8 -output out.cmarc -rule rules.json");	
+    		System.exit(-1);
+    	};
+    	for(String s : args) {
+    		log.debug(s);
+    	}
+    	String input = "";
+    	String output = "";
+    	String rules = "";
+    	
+    	TransRule rules1 = new TransRule();
+    	MarcTransformer transformer = new MarcTransformer(rules1);
+    	transformer.transform(input, output);
+    	
         String marc21 = "";
         String filename ="20171205_450880_demo-vzhao_Full-MARC8";
         //filename = "20171117_423294_ntuedu_Full-MARC8";
@@ -46,8 +61,12 @@ public class App
         MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
         while(mr.hasNext()) {
         	Record r = mr.next();       	
-        	System.out.println(r.toString());
-        }   
+        	//System.out.println(r.toString());
+        }         
+        //testRuleJSON();
+    }
+
+	private static void testRuleJSON() throws FileNotFoundException {
         
         TransRule tr = new TransRule();
         
@@ -70,7 +89,7 @@ public class App
         frule.setWholeFieldMapping(whole);
         //frule.validateSubfieldsRule();
         
-        Gson gson = new Gson();
+		Gson gson = new Gson();
         String json = gson.toJson(frule);
         System.out.println("" + json);
         
@@ -89,12 +108,12 @@ public class App
         System.out.println(gson.toJson(tr));
         System.out.println();
         String path = App.class.getClassLoader().getResource("rules.json").getPath();
-        path = path;
+
         TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);
         System.out.println(trr.getTransRules());
         
         log.info("something test");
-    }
+	}
     
     
    
