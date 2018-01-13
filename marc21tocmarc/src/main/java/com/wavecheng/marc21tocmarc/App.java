@@ -18,6 +18,8 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.spi.LoggerFactoryBinder;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 import com.hw.lib.core.marc.Field;
 import com.hw.lib.core.marc.Marc;
 import com.hw.lib.core.marc.impl.MarcImpl;
@@ -30,7 +32,7 @@ public class App
 {
 	private static Logger log = LoggerFactory.getLogger(App.class);
 	
-    public static void main( String[] args ) throws IOException
+    public static void main( String[] args ) throws Exception
     {
     	if(args.length <2 ) {
     		System.out.println("Usage: -input in.mrc8 -output out.cmarc -rule rules.json");	
@@ -43,29 +45,34 @@ public class App
     	String output = "";
     	String rules = "";
     	
-    	TransRule rules1 = new TransRule();
-    	MarcTransformer transformer = new MarcTransformer(rules1);
-    	transformer.transform(input, output);
-    	
-        String marc21 = "";
-        String filename ="20171205_450880_demo-vzhao_Full-MARC8";
-        //filename = "20171117_423294_ntuedu_Full-MARC8";
-        //filename = "proquest-Cmarc";
-//        FileReader fr = new FileReader(filename +".mrc");
-//        BufferedReader br = new BufferedReader(fr);
-//        marc21 = br.readLine();
-//        Marc m = new MarcImpl(marc21);
-//        for(Field f : m.listFields())
-//        System.out.println(f.getName() + ":" + f.getData());
-        
-        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
-        while(mr.hasNext()) {
-        	Record r = mr.next();       	
-        	//System.out.println(r.toString());
-        }         
+//    	TransRule rules1 = new TransRule();
+//    	MarcTransformer transformer = new MarcTransformer(rules1);
+//    	transformer.transform(input, output);
+//    	
+//        String marc21 = "";
+//        String filename ="20171205_450880_demo-vzhao_Full-MARC8";
+//        //filename = "20171117_423294_ntuedu_Full-MARC8";
+//        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
+//        while(mr.hasNext()) {
+//        	Record r = mr.next();       	
+//        	//System.out.println(r.toString());
+//        }         
         //testRuleJSON();
+    	runTrans();
     }
 
+    private static void runTrans() throws Exception, JsonIOException, FileNotFoundException {
+    	Gson gson = new Gson();
+    	String input ="20171205_450880_demo-vzhao_Full-MARC8.mrc";
+    	String output ="output.txt";
+    	
+    	String path = App.class.getClassLoader().getResource("rules.json").getPath();
+        TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);
+        
+    	MarcTransformer transformer = new MarcTransformer(trr);
+    	transformer.transform(input, output);
+    	
+    }
 	private static void testRuleJSON() throws FileNotFoundException {
         
         TransRule tr = new TransRule();
@@ -78,14 +85,14 @@ public class App
         frule.setIndi2From(' ');
         frule.setIndi2To('1');
         
-        Map<String,String> subf = new HashMap<String,String>();
-        subf.put("a", "b");
-        subf.put("b", "h");
+        Map<Character,Character> subf = new HashMap<Character,Character>();
+        subf.put('a', 'b');
+        subf.put('b', 'h');
         frule.setSubfieldMapping(subf);
         
-        Map<String,String> whole = new HashMap<String, String>();
-        whole.put("4", "330a");
-        whole.put("a", "843b");
+        Map<Character,String> whole = new HashMap<Character, String>();
+        whole.put('4', "330a");
+        whole.put('a', "843b");
         frule.setWholeFieldMapping(whole);
         //frule.validateSubfieldsRule();
         
@@ -114,7 +121,5 @@ public class App
         
         log.info("something test");
 	}
-    
-    
-   
+      
 }

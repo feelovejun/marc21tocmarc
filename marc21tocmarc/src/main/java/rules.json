@@ -1,44 +1,264 @@
 {
     "transRules": [
         {
-            "from": "050", 
-            "to": "680", 
-            "indi1From": "1", 
-            "indi1To": " ", 
-            "indi2From": " ", 
-            "indi2To": "1", 
+            "from":"001",
+            "to":"001"
+        },
+        {
+            "from": "020", 
+            "to": "010", 
+            "indi1From": null, 
+            "indi1To": "1", 
+            "indi2From": null, 
+            "indi2To": null, 
             "subfieldMapping": {
-                "a": "b", 
-                "b": "h"
             }, 
             "wholeFieldMapping": {
-                "4": "330a", 
-                "a": "843b"
+            }
+        }, 
+        {
+            "from": "043", 
+            "to": "660", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {             
             }
         }, 
         {
             "from": "050", 
             "to": "680", 
-            "indi1From": "1", 
-            "indi1To": " ", 
-            "indi2From": " ", 
-            "indi2To": "1", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
             "subfieldMapping": {
-                "a": "b", 
-                "b": "h"
             }, 
             "wholeFieldMapping": {
-                "4": "330a", 
-                "a": "843b"
             }
-        }
+        },
+        {
+            "from": "082", 
+            "to": "676", 
+            "indi1From": null, 
+            "indi1To": " ", 
+            "indi2From": null, 
+            "indi2To": " ", 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "100", 
+            "to": "700", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }, 
+        {
+            "from": "245", 
+            "to": "200", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            	"h":"204a"             
+            }
+        }, 
+        {
+            "from": "260", 
+            "to": "210", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "264", 
+            "to": "210", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "300", 
+            "to": "215", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }, 
+        {
+            "from": "490", 
+            "to": "225", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {             
+            }
+        }, 
+        {
+            "from": "504", 
+            "to": "320", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "533", 
+            "to": "300", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "588", 
+            "to": "300", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }, 
+        {
+            "from": "590", 
+            "to": "300", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {             
+            }
+        }, 
+        {
+            "from": "650", 
+            "to": "606", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "651", 
+            "to": "607", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "655", 
+            "to": "610", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }, 
+        {
+            "from": "700", 
+            "to": "700", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {             
+            }
+        }, 
+        {
+            "from": "710", 
+            "to": "712", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "797", 
+            "to": "712", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        },
+        {
+            "from": "856", 
+            "to": "856", 
+            "indi1From": null, 
+            "indi1To": " ", 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }                                             
     ], 
     "replaceRules": [
-        {
-            "field": "245a", 
-            "pattern": "[\\[|\\]]", 
-            "replacement": ""
-        }, 
         {
             "field": "245a", 
             "pattern": "[\\[|\\]]", 

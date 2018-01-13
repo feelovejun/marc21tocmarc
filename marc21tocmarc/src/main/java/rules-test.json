@@ -1,0 +1,27 @@
+{
+    "transRules": [
+        {
+            "from":"001",
+            "to":"001"
+        },
+        {
+            "from": "020", 
+            "to": "010", 
+            "indi1From": null, 
+            "indi1To": null, 
+            "indi2From": null, 
+            "indi2To": null, 
+            "subfieldMapping": {
+            }, 
+            "wholeFieldMapping": {
+            }
+        }
+   ], 
+    "replaceRules": [
+        {
+            "field": "245a", 
+            "pattern": "[\\[|\\]]", 
+            "replacement": ""
+        }
+    ]
+}
