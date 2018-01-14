@@ -2,7 +2,9 @@ package com.wavecheng.marc21tocmarc;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * field to field translate,including subfield to another whole field trans
@@ -18,6 +20,15 @@ public class FieldTransRule {
 	private Character indi2To;
 	private Map<Character,Character> subfieldMapping = new HashMap<Character,Character>();
 	private Map<Character,String> wholeFieldMapping = new HashMap<Character, String>();
+	private Set<Character> ignoreSubfields = new HashSet<Character>();
+	
+	
+	public Set<Character> getIgnoreSubfields() {
+		return ignoreSubfields;
+	}
+	public void setIgnoreSubfields(Set<Character> ignoreSubfields) {
+		this.ignoreSubfields = ignoreSubfields;
+	}
 	public String getFrom() {
 		return from;
 	}

@@ -100,11 +100,24 @@ public class MarcTransformer {
 			DataField nwDf = new DataFieldImpl(transRule.getTo(), indi1, indi2);
 			
 			for(Subfield sub : df.getSubfields()) {
+				if(transRule.getIgnoreSubfields().contains(new Character(sub.getCode())))
+					continue;
+				
 				Character code = transRule.getSubfieldMapping().get(sub.getCode());
 				String wholeMap = transRule.getWholeFieldMapping().get(sub.getCode());
 				
 				if(code != null) {
-					nwDf.addSubfield(new SubfieldImpl(code, sub.getData()));
+					
+					if("700".equals(df.getTag()) && sub.getCode() == 'a') {
+						String[] vs= sub.getData().split("(,|\\|)");
+						nwDf.addSubfield(new SubfieldImpl('a', vs[0]));
+						if(vs.length >1) {
+							for(int i=1;i<vs.length; i++)
+								nwDf.addSubfield(new SubfieldImpl('b', vs[i].trim()));
+						}
+					}else {
+						nwDf.addSubfield(new SubfieldImpl(code, sub.getData()));
+					}
 				}
 				else if(wholeMap != null){
 					//whole field replace to generate a new field
@@ -128,7 +141,6 @@ public class MarcTransformer {
 					}else {
 						nwDf.addSubfield(sub);
 					}
-					
 				}
 			}
 			log.debug("old to new=>" + df.getTag() + ":" + nwDf.toString());

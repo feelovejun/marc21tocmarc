@@ -34,7 +34,7 @@
             "indi1From": null, 
             "indi1To": null, 
             "indi2From": null, 
-            "indi2To": null, 
+            "indi2To": " ", 
             "subfieldMapping": {
             }, 
             "wholeFieldMapping": {
@@ -59,7 +59,7 @@
             "indi1To": null, 
             "indi2From": null, 
             "indi2To": null, 
-            "subfieldMapping": {
+            "subfieldMapping": {            
             }, 
             "wholeFieldMapping": {
             }
@@ -217,7 +217,10 @@
             "indi2From": null, 
             "indi2To": null, 
             "subfieldMapping": {
-            }, 
+            	"a":"a",
+            	"d":"f"
+            },
+            "ignoreSubfields":["e"], 
             "wholeFieldMapping": {             
             }
         }, 

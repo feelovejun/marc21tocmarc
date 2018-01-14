@@ -7,7 +7,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.marc4j.MarcReader;
 import org.marc4j.MarcStreamReader;
@@ -57,7 +59,7 @@ public class App
 //        	Record r = mr.next();       	
 //        	//System.out.println(r.toString());
 //        }         
-        //testRuleJSON();
+//        testRuleJSON();
     	runTrans();
     }
 
@@ -95,6 +97,9 @@ public class App
         whole.put('a', "843b");
         frule.setWholeFieldMapping(whole);
         //frule.validateSubfieldsRule();
+        Set<Character> ingores = new HashSet<Character>();
+        ingores.add('e');
+        frule.setIgnoreSubfields(ingores);
         
 		Gson gson = new Gson();
         String json = gson.toJson(frule);
