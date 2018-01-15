@@ -178,9 +178,10 @@
             "to": "606", 
             "indi1From": null, 
             "indi1To": null, 
-            "indi2From": null, 
-            "indi2To": null, 
+            "indi2From": "0", 
+            "indi2To": " ", 
             "subfieldMapping": {
+            	"z":"y"
             }, 
             "wholeFieldMapping": {
             }

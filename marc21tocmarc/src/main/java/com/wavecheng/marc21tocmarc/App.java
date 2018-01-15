@@ -71,8 +71,9 @@ public class App
     	String path = App.class.getClassLoader().getResource("rules.json").getPath();
         TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);
         
-    	MarcTransformer transformer = new MarcTransformer(trr);
-    	transformer.transform(input, output);
+//    	MarcTransformer transformer = new MarcTransformer(trr);
+    	MarcHardcodeTransformer transformer = new MarcHardcodeTransformer();
+        transformer.transform(input, output);
     	
     }
 	private static void testRuleJSON() throws FileNotFoundException {
