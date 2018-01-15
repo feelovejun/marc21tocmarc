@@ -1,13 +1,9 @@
 package com.wavecheng.marc21tocmarc;
 
-import java.beans.FeatureDescriptor;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 import org.marc4j.MarcReader;
@@ -24,8 +20,6 @@ import org.marc4j.marc.impl.RecordImpl;
 import org.marc4j.marc.impl.SubfieldImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javafx.collections.transformation.SortedList;
 
 public class MarcHardcodeTransformer {
 
@@ -68,10 +62,23 @@ public class MarcHardcodeTransformer {
 	}
 
 	
+	private void handleControlFields(Record record, List<VariableField> fieldsList) {
+		List<ControlField> cfs = record.getControlFields();
+		for(ControlField cf : cfs) {
+			switch(cf.getTag()) {
+				case "001":
+					fieldsList.add(cf);
+					break;
+				case "008":
+					handle008(cf,fieldsList);
+					break;
+			}
+		}
+	}
+
 	private void handleDataFields(Record record, List<VariableField> fieldsList) {
 		List<DataField> dfs =  record.getDataFields();
 		for(DataField df : dfs) {
-
 			switch(df.getTag()) {
 				case "020":
 					handle020(df,fieldsList);
@@ -120,9 +127,129 @@ public class MarcHardcodeTransformer {
 				case "504":
 					handle504(df,fieldsList);
 					break;
+				case "513":
+				case "514":
+				case "518":
+				case "524":
+				case "526":
+				case "533":
+				case "588":
+				case "590":
+					handle533and588and590(df,fieldsList);
+					break;
+				case "650":
+					handle650(df,fieldsList);
+					break;
+				case "651":
+					handle651(df,fieldsList);
+					break;
+				case "655":
+					handle655(df,fieldsList);
+					break;
+				case "710":
+				case "797":
+					df.setIndicator1('0');
+					df.setIndicator2('2');
+					df.setTag("712");
+					log.debug("710/797 => 712:" + df.toString());
+					fieldsList.add(df);
+					break;
+				case "856":
+					log.debug("856 => 856:" + df.toString());
+					fieldsList.add(df);	
+					break;
 			}
 		}
 	}
+
+	private void handle008(ControlField df, List<VariableField> fieldsList) {
+		String data = df.getData();
+		fieldsList.add(buildDataField("102a", data.substring(15, 17)));
+		fieldsList.add(buildDataField("101a", data.substring(35, 37)));
+	}
+
+
+	private void handle655(DataField df, List<VariableField> fieldsList) {
+		DataField nwDf = new DataFieldImpl("610", '1',' ');
+		for(Subfield sub: df.getSubfields()) {
+			sub.setData(removeLastCharAndTrim(sub.getData(), new char[] {'.'}));
+			nwDf.addSubfield(sub);		
+		}	
+		log.debug("655 => 610:" + nwDf.toString());
+		fieldsList.add(nwDf);	
+	}
+
+
+	private void handle650(DataField df, List<VariableField> fieldsList) {
+		char indi2 = df.getIndicator2();
+		String subject = "";
+		switch(indi2) {
+			case '0':	subject = "lc"; break;
+			case '1':	subject = "lcc"; break;
+			case '2':	subject = "mesh"; break;
+			case '3':	subject = "nal"; break;			
+			case '5':	subject = "cae"; break;
+			case '6':	subject = "caf"; break;
+			default:  break;
+		}
+		
+		DataField nwDf = new DataFieldImpl("606", df.getIndicator1(),' ');
+		df.addSubfield(new SubfieldImpl('2', subject));
+		for(Subfield sub: df.getSubfields()) {
+			if(sub.getCode() == 'z') {
+				sub.setCode('y');
+			}else if(sub.getCode() == 'v') {
+				sub.setCode('x');
+			}else if(sub.getCode() == 'y') {
+				sub.setCode('z');
+			}
+			sub.setData(removeLastCharAndTrim(sub.getData(), new char[] {'.'}));
+			nwDf.addSubfield(sub);		
+		}	
+		log.debug("650 => 606:" + nwDf.toString());
+		fieldsList.add(nwDf);	
+	}
+
+	private void handle651(DataField df, List<VariableField> fieldsList) {
+		char indi2 = df.getIndicator2();
+		String subject = "";
+		switch(indi2) {
+			case '0':	subject = "lc"; break;
+			case '1':	subject = "lcc"; break;
+			case '2':	subject = "mesh"; break;
+			case '3':	subject = "nal"; break;			
+			case '5':	subject = "cae"; break;
+			case '6':	subject = "caf"; break;
+			default:  break;
+		}
+		
+		DataField nwDf = new DataFieldImpl("607", df.getIndicator1(),' ');
+		df.addSubfield(new SubfieldImpl('2', subject));
+		for(Subfield sub: df.getSubfields()) {
+			if(sub.getCode() == 'z') {
+				sub.setCode('y');
+			}else if(sub.getCode() == 'v') {
+				sub.setCode('x');
+			}else if(sub.getCode() == 'y') {
+				sub.setCode('z');
+			}
+			sub.setData(removeLastCharAndTrim(sub.getData(), new char[] {'.'}));
+			nwDf.addSubfield(sub);		
+		}	
+		log.debug("651 => 607:" + nwDf.toString());
+		fieldsList.add(nwDf);	
+	}
+	
+	private void handle533and588and590(DataField df, List<VariableField> fieldsList) {
+		DataField nwDf = new DataFieldImpl("300", df.getIndicator1(),df.getIndicator2());
+		for(Subfield sub: df.getSubfields()) {
+			sub.setData(removeLastCharAndTrim(sub.getData(), new char[] {'.'}));
+			nwDf.addSubfield(sub);		
+		}	
+		log.debug("5xx => 300:" + nwDf.toString());
+		fieldsList.add(nwDf);		
+	}
+
 
 	private void handle504(DataField df, List<VariableField> fieldsList) {
 		DataField nwDf = new DataFieldImpl("320", df.getIndicator1(),df.getIndicator2());
@@ -179,8 +306,7 @@ public class MarcHardcodeTransformer {
 			}else {
 				nwDf.addSubfield(sub);
 			}
-		}
-		
+		}		
 		log.debug("260 => 210:" + nwDf.toString());
 		fieldsList.add(nwDf);
 		
@@ -280,20 +406,6 @@ public class MarcHardcodeTransformer {
 		}
 		log.debug("020 => 010:" + nwDf.toString());
 		fieldsList.add(nwDf);
-	}
-
-
-	private void handleControlFields(Record record, List<VariableField> fieldsList) {
-		for(ControlField field: record.getControlFields()){	
-			
-			fieldsList.add(field);
-			
-			if("008".equals(field.getTag())){
-				String data = field.getData();
-				fieldsList.add(buildDataField("102a", data.substring(15, 17)));
-				fieldsList.add(buildDataField("101a", data.substring(35, 37)));
-			}
-		}
 	}
 
 	private DataField buildDataField(String tagWithSub, String data) {
