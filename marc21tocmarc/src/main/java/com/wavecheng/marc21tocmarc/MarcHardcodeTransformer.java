@@ -1,10 +1,16 @@
 package com.wavecheng.marc21tocmarc;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.marc4j.MarcReader;
 import org.marc4j.MarcStreamReader;
@@ -12,6 +18,7 @@ import org.marc4j.MarcStreamWriter;
 import org.marc4j.MarcWriter;
 import org.marc4j.marc.ControlField;
 import org.marc4j.marc.DataField;
+import org.marc4j.marc.Leader;
 import org.marc4j.marc.Record;
 import org.marc4j.marc.Subfield;
 import org.marc4j.marc.VariableField;
@@ -20,6 +27,10 @@ import org.marc4j.marc.impl.RecordImpl;
 import org.marc4j.marc.impl.SubfieldImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 
 public class MarcHardcodeTransformer {
 
@@ -163,11 +174,64 @@ public class MarcHardcodeTransformer {
 	}
 
 	private void handle008(ControlField df, List<VariableField> fieldsList) {
+		Map<String,String> countryMap = getCountryMap();
+		
 		String data = df.getData();
-		fieldsList.add(buildDataField("102a", data.substring(15, 17)));
+		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+		String $a = format.format(new Date());
+		switch(data.charAt(6)) {
+			case 'b': 
+			case 'n':
+			case 'q':
+				$a += "f"; 
+				break;
+			case 'c': $a += "a"; break;
+			case 'd': $a += "b"; break;
+			case 'e': 
+			case 'p':
+			case 's':
+			case 't':
+				$a += "d"; 
+				break;
+			case 'i':
+			case 'k':
+			case 'm':
+				$a += "g"; 
+				break;
+			case 'r': $a += "e"; break;
+			case 'u': $a += "c"; break;
+		}
+		
+		//pos:9-16
+		if(data.substring(7, 10).equalsIgnoreCase(data.substring(11,14)))
+			$a += data.substring(7,11);
+		else
+			$a += data.substring(7,15);
+		
+		//pos:17-20
+		$a += "k  ";
+		
+		//pos:21-
+		$a += "0engy01      b";
+		
+		DataField nwDf = buildDataField("100a", $a);
+		fieldsList.add(nwDf);
+		
+		String nation = data.substring(15, 17);
+		fieldsList.add(buildDataField("102a", countryMap.getOrDefault(nation, nation)));
 		fieldsList.add(buildDataField("101a", data.substring(35, 37)));
 	}
 
+
+	private Map<String, String> getCountryMap() {
+		Gson gson = new Gson();
+		try {
+			return (Map<String,String>)gson.fromJson(new FileReader("count-code-map.json"), Map.class);
+		} catch (Exception ex) {
+			log.error("read count-code-map.json failed: " + ex);
+		}
+		return new HashMap<String, String>();
+	}
 
 	private void handle655(DataField df, List<VariableField> fieldsList) {
 		DataField nwDf = new DataFieldImpl("610", '1',' ');
@@ -428,7 +492,57 @@ public class MarcHardcodeTransformer {
 		return out.trim();
 	}
 	private void handleLeader(Record record, Record cmarc) {
-		cmarc.setLeader(record.getLeader());
+		Leader leader = record.getLeader();
+		leader.setRecordStatus('c');
+		
+		//char 7-8
+		char []impl1 = leader.getImplDefined1();		
+		//char 17-19 
+		char []impl2 = leader.getImplDefined2();
+		
+		switch(impl1[0]) {
+			case 'b': impl1[0] = 'a'; break;
+			case 'd': impl1[0] = 'a'; break;
+			case 'i': impl1[0] = 's'; break;
+		}
+		
+		//char 19 ==> 8
+		switch(impl2[2]) {
+			case ' ': impl1[1] = '0'; break;
+			case 'a': impl1[1] = '1'; break;
+			case 'b': impl1[1] = '2'; break;
+			case 'c': impl1[1] = '2'; break;
+		}
+
+		//char 17 => 17
+		switch(impl2[0]){
+			case '1': impl2[0] = ' '; break;
+			case '2':
+			case '3':
+			case '4':
+				impl2[0] = '1'; break;
+			case '5':
+			case '7':
+			case 'u':
+			case 'z':
+				impl2[0] = '3'; break;
+			case '8': 
+				impl2[0] = '2'; break;			
+		}
+		
+		//char 18 ==> 18
+		switch(impl2[1]) {
+			case 'a': impl2[1] = ' ';break;
+			case 'c': impl2[1] = 'i';break;
+			case 'i': impl2[1] = ' ';break;
+			case 'u': impl2[1] = 'n';break;
+		}
+		
+		//char 8 ==> char 19
+		impl2[2] = ' ';
+		leader.setImplDefined1(impl1);
+		leader.setImplDefined2(impl2);
+		cmarc.setLeader(leader);
 	}
 
 }
