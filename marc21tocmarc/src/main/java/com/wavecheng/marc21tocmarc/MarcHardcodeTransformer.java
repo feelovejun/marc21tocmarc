@@ -38,6 +38,12 @@ public class MarcHardcodeTransformer {
 	private int total;
 	private int success;
 	private int error;
+	private Map<String,String> countryMap;
+	
+	public MarcHardcodeTransformer() {
+		countryMap = getCountryMap();	
+	}
+	
 	
 	public int transform(String fileIn, String fileOutput) throws IOException {
 		MarcReader reader = new MarcStreamReader(new FileInputStream(fileIn));
@@ -173,9 +179,7 @@ public class MarcHardcodeTransformer {
 		}
 	}
 
-	private void handle008(ControlField df, List<VariableField> fieldsList) {
-		Map<String,String> countryMap = getCountryMap();
-		
+	private void handle008(ControlField df, List<VariableField> fieldsList) {		
 		String data = df.getData();
 		SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
 		String $a = format.format(new Date());
@@ -217,16 +221,17 @@ public class MarcHardcodeTransformer {
 		DataField nwDf = buildDataField("100a", $a);
 		fieldsList.add(nwDf);
 		
-		String nation = data.substring(15, 17);
+		String nation = data.substring(15, 18);
 		fieldsList.add(buildDataField("102a", countryMap.getOrDefault(nation, nation)));
-		fieldsList.add(buildDataField("101a", data.substring(35, 37)));
+		fieldsList.add(buildDataField("101a", data.substring(35, 38)));
 	}
 
 
 	private Map<String, String> getCountryMap() {
 		Gson gson = new Gson();
 		try {
-			return (Map<String,String>)gson.fromJson(new FileReader("count-code-map.json"), Map.class);
+			String file = getClass().getClassLoader().getResource("county-code-map.json").getPath();
+			return (Map<String,String>)gson.fromJson(new FileReader(file), Map.class);
 		} catch (Exception ex) {
 			log.error("read count-code-map.json failed: " + ex);
 		}

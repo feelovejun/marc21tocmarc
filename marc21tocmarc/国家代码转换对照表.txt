@@ -1,336 +1,328 @@
-﻿Afghanistan                           af       AF    Afghanistan                             
-Albania                               aa       AL    Albania                                 
-Algeria                               ae       DZ    Algeria                                 
-American Samoa                        as       AS    American Samoa                          
-Andorra                               an       AD    Andorra                                 
-Angola                                ao       AO    Angola                                  
-Anguilla                             am        AI    Anguilla                                
-Antarctica                            ay       AQ    Antarctica                              
-Antigua and Barbuda                   aq       AG    Antigua                            採用 ISO 3166-1 (2011)的名稱   
-Argentina                             ag       AR    Argentina                               
-Armenia (Republic)                    ai       AM    Armenia                                 
-Aruba                                aw       AW     Aruba                                   
-Australia                             at       AU    Australia                               
-Australian Capital Territory         aca       AU    Australia                               
-Western Austrlia                    wea        AU    Australia                               
-Austria                               au       AT    Austria                                 
-Azerbaijan                            aj       AZ    Azerbaijan                              
-Bahamas                               bf       BS     Bahamas                                
-Bahrain                               ba       BH     Bahrain                                
-Bangladesh                            bg       BD     Bangladesh                             
-Barbados                              bb       BB     Barbados                               
-Belarus                              bw        BY                                       採用 ISO 3166-1 (2011)的名稱  
-Belgium                               be       BE     Belgium                                
-Belize                                bh       BZ     Belize                                 
-Benin                                dm        BJ     Benin                                  
-Bermuda Islands                      bm        BM     Bermuda                                
-Bhutan                                bt       BT     Bhutan                                 
-Bolivia                               bo       BO     Bolivia                                
-Bosnia and Hercegovina                bn       BA     Bosnia and Hercegovina                 
-Botswana                              bs       BW     Botswana                               
-Bouvet Island                         bv       BV     Bouvet Island                          
-Brazil                                bl       BR     Brazil                                 
-British Indian Ocean Territory        bi       IO     British Indian Ocean Territory         
-British Virgin Islands               vb       VG     British Virgin Islands            採用 ISO 3166-1 (2011)的名稱   
-Brunei                               bx        BN    Brunei                            採用 ISO 3166-1 (2011)的名稱   
-Bulgaria                             bu       BG     Bulgaria                               
-Burkina Faso                         uv        BF    Burkina Faso                           
-Burma                                 br      MM     Myanmar                           CMARC3 代碼原為 BU   
-Burundi                              bd        BI    Burundi                                
-Cameroon                             cm       CM     Cameroon, United Republic of           
-Canada                               xxc      CA     Canada                                 
-Alberta                              abc      CA     Canada                                 
-British Columbia                     bcc      CA     Canada                                 
-District of Columbia                dcu       CA     Canada                                 
-Manitoba                            mbc       CA     Canada                                 
-New Brunswick                        nkc      CA     Canada                                 
-Newfoundland and Labrador            nfc      CA     Canada                                 
-Northwest Territories                ntc      CA     Canada                                 
-Nova Scotia                          nsc      CA     Canada                                 
-Nunavut                              nuc      CA     Canada                                 
-Ontario                             onc       CA     Canada                                 
-Prince Edward Island                 pic      CA     Canada                                 
-Québec (Province)                   quc       CA     Canada                                 
-Saskatchewan                         snc      CA     Canada                                 
-Yukon Territory                      ykc      CA     Canada                                 
-Cape Verde                           cv        CV    Cape Verde                             
-Cayman Islands                        cj       KY    Cayman Islands                         
-Central African Republic             cx        CF    Central African Republic               
-Chad                                 cd        TD    Chad                                   
-Chile                                 cl       CL    Chile                                  
-China                                cc       CN     China, People's Republic of            
-Paracel Islands                       pf      CN     China, People's Republic of            
-China (Republic : 1949- )            ch       TW  
-                                     xa        CX    Christmas Island                        
-Cocos (Keeling) Islands              xb       CC     Cocos (Keeling) Islands                
-Colombia                             ck       CO     Colombia                               
-Comoros                              cq       KM     Comoros                                
-Congo (Brazzaville)                   cf      CG     Congo (People’s Republic of            
-Congo (Democratic Republic)             cg       CD                                              
-Cook Islands                           cw        CK     Cook Islands                              
-Coral Sea Islands Territory            xga       AU     Coral Sea Islands Territory               
-Costa Rica                              cr       CR     Costa Rica                                
-Côte d'Ivoire                           iv        CI    Côte d'Ivoire                             
-Croatia                                 ci       HR     Croatia                                   
-Cuba                                    cu       CU     Cuba                                      
-Cyprus                                  cy       CY     Cyprus                                    
-Czech Republic                          xr       CZ     Czech Republic                            
-Denmark                                 dk       DK     Denmark                                   
-Djibouti                                ft        DJ    Djibouti                                  
-Dominica                                dq       DM     Dominica                                  
-Dominican Republic                      dr       DO     Dominican Republic                        
-East Timor                             em         TL    East Timor                          CMARC3 代碼原為 TP   
-Ecuador                                 ec       EC     Ecuador                                   
-Egypt                                   ua       EG     Egypt                                     
-El Salvador                             es       SV     El Salvador                               
-Equatorial Guinea                       eg       GQ     Equatorial Guinea                         
-Eritrea                                 ea       ER     Eritrea                                   
-Estonia                                 er        EE    Estonia                                   
-Ethiopia                                et        ET    Ethiopia                                  
-Falkland Islands                        fk        FK    Falkland Islands (Malvinas)               
-Faroe Islands                           fa       FO     Faroe Islands                             
-Fiji                                    fj        FJ    Fiji                                      
-Finland                                 fi        FI    Finland                                   
-France                                  fr        FR    France                                    
-French Guiana                           fg       GF     French Guiana                             
-French Polynesia                        fp        PF    French Polynesia                          
-Terres australes et antarctiques       fs        TF    French Southern Territories              
-Gabon                                   go       GA     Gabon                                     
-Gambia                                 gm        GM     Gambia                                    
-Georgia (Republic)                      gs       GE     Georgia (Republic)                        
-Germany                                gw        DE     Germany  
-Ghana                                   gh        GH     Ghana                                     
-Gibraltar                               gi        GI     Gibraltar                                 
-Greece                                  gr        GR     Greece                                    
-Greenland                               gl        GL     Greenland                                 
-Grenada                                 gd        GD     Grenada                                   
-Guadeloupe                              gp        GP     Guadeloupe                                
-Guam                                    gu        GU     Guam                                      
-Guatemala                               gt        GT     Guatemala                                 
-Guinea                                  gv        GN     Guinea                                    
-Guinea-Bissau                           pg       GW      Guinea-Bissau                             
-Guyana                                  gy        GY     Guyana                                    
-Haiti                                   ht        HT     Haiti                                     
-Heard and McDonald Islands              hm        HM     Heard and McDonald Islands                
-Vatican City                            vc        VA     Holy See (Vatican City State)             
-Honduras                                ho        HN     Honduras                                  
-Hungary                                 hu        HU     Hungary                                   
-Iceland                                  ic        IS    Iceland                                   
-India                                    ii       IN     India                                     
-Indonesia                                io       ID     Indonesia                                 
-Iran                                     ir       IR     Iran, Islamic Republic of                 
-Iraq                                     iq       IQ     Iraq                                      
-Iraq-Saudi Arabia Neutral                iy       NT     Neutral Zone  
-Ireland                                  ie        IE    Ireland                                   
-Israel                                   is        IL    Israel                                    
-Italy                                    it        IT    Italy                                     
-Jamaica                                 jm        JM     Jamaica                                   
-Japan                                   ja        JP     Japan                                     
-Johnston Atoll                           ji       US     United States                             
-Jordan                                  jo        JO     Jordan                                    
-Cambodia                                cb        KH     Kampuchea, Democratic                     
-Kazakhstan                              kz        KZ     Kazakhstan                                
-Kenya                                   ke        KE     Kenya                                     
-Kiribati                                gb        KI     Kiribati                                  
-Korea (North)                           kn        KP                                              
-Korea (South)                           ko        KR     Korea, Republic of                        
-Kosovo                                kv       RS    Serbia                            CMARC3 原代碼 CS 改為 RS   
-Kuwait                                ku      KW     Kuwait                                  
-Kyrgyzstan                            kg       KG    Kyrgyzstan                              
-Laos                                  ls       LA                                           
-Latvia                                lv       LV    Latvia                                  
-Lebanon                               le       LB    Lebanon                                 
-Lesotho                               lo       LS    Lesotho                                 
-Liberia                               lb       LR    Liberia                                 
-Libya                                 ly       LY    Libyan Arab Jamahiriya                  
-Liechtenstein                         lh       LI    Liechtenstein                           
-Lithuania                             li       LT    Lithuania                               
-Luxembourg                            lu       LU    Luxembourg                              
-Macedonia                            xn        MK                                           
-Madagascar                           mg       MG     Madagascar                              
-Malawi                               mw       MW     Malawi                                  
-Malaysia                             my        MY    Malaysia                                
-Maldives                             xc        MV    Maldives                                
-Mali                                 ml        ML    Mali                                    
-Malta                                mm        MT    Malta                                   
-Marshall Islands                     xe        MH    Marshall Islands                        
-Martinique                           mq       MQ     Martinique                              
-Mauritania                           mu        MR    Mauritania                              
-Mauritius                            mf        MU    Mauritius                               
-Mayotte                               ot       YT    Mayotte                                 
-Mexico                               mx        MX    Mexico                                  
-Micronesia (Federated States)        fm        FM    Micronesia, Federated States of         
-Midway Islands                        xf       US    United States  
-Moldova                              mv        MD    Moldova, Republic of                    
-Monaco                               mc        MC    Monaco                                  
-Mongolia                             mp        MN    Mongolia                                
-Montenegro                           mo        ME    Montenegro                        CMARC3 原代碼 CS 改為 ME   
-Montserrat                           mj        MS    Montserrat                              
-Morocco                              mr        MA    Morocco                                 
-Mozambique                           mz        MZ    Mozambique                              
-Namibia                               sx       NA     Namibia                                 
-Nauru                                 nu       NR     Nauru                                   
-Nepal                                 np        NP    Nepal                                   
-Netherlands                           ne        NL    Netherlands                             
-Netherlands Antilles                  na        NL    Netherlands  
-New Caledonia                          nl      NC     New Caledonia                           
-New South Wales                      xna       AU     New South Wales                         
-New Zealand                           nz        NZ    New Zealand                             
-Nicaragua                             nq        NI    Nicaragua                               
-Niger                                 ng        NE    Niger                                   
-Nigeria                               nr       NG     Nigeria                                 
-Niue                                  xh       NU     Niue                                    
-No place, unknown, or                 xx       XX                                            
-Norfolk Island                        nx        NF    Norfolk Island                          
-Northern Mariana Islands              nw       MP     Northern Mariana Islands                
-Northern Territory                   xoa       AU     Northern Territory                      
-Norway                                no       NO     Norway                                  
-Oman                                  mk       OM     Oman                                    
-Pakistan                              pk        PK    Pakistan                                
-Palau                                 pw       PW     Palau                                   
-Gaza Strip                            gz        PS    Palestinian terroitory, occupied        
-Panama                                pn        PA    Panama                                  
-Papua New Guinea                      pp       PG     Papua New Guinea                        
-Paraguay                              py        PY    Paraguay                                
-Peru                                  pe        PE    Peru                                    
-Philippines                           ph        PH    Philippines                             
-Pitcairn Island                       pc        PN    Pitcairn                                
-Poland                                 pl       PL    Poland                                  
-Portugal                              po        PT    Portugal                                
-Puerto Rico                           pr        PR    Puerto Rico                             
-Qatar                                 qa       QA     Qatar                                   
-Queensland                           qea       AU     Queensland                              
-Réunion                               re        RE    Réunion                                 
-Romania                               rm       RO     Romania                                 
-Russia (Federation)                   ru       RU     Russia Federation                       
-Rwanda                                 rw        RW     Rwanda                                   
-Saint Helena                            xj       SH     Saint Helena                             
-Saint Kitts-Nevis                      xd        KN     Saint Kitts and Nevis                    
-Saint Lucia                            xk        LC     Saint Lucia                              
-Saint Pierre and Miquelon               xl       PM     Saint Pierre and Miquelon                
-Saint Vincent and the                xm        VC                                             
-Samoa                                  ws        WS     Samoa                                    
-San Marino                             sm        SM     San Marino                               
-Sao Tome and Principe                   sf       ST     Sao Tome and Principe                    
-Saudi Arabia                           su        SA     Saudi Arabia                             
-Senegal                                sg        SN     Senegal                                  
-Seychelles                             se        SC     Seychelles                               
-Sierra Leone                            sl       SL     Sierra Leone                             
-Singapore                               si       SG     Singapore                                
-Slovakia                               xo        SK     Slovakia                                 
-Slovenia                               xv         SI    Slovenia                                 
-Solomon Islands                        bp        SB     Solomon Islands                          
-Somalia                                so        SO     Somalia                                  
-South Africa                           sa        ZA     South Africa                             
-South Australia                       sxra       AU     South Australia                          
-South Georgia and the South            xs        GS                                             
-Spain                                  sp        ES     Spain                                    
-Spanish North Africa                   sh        ES     Spain                                    
-Spratly Island                         xp        TW                                             
-Sri Lanka                              ce        LK     Sri Lanka                                
-Sudan                                   sj       SD     Sudan                                    
-Surinam                                 sr       SR     Suriname                                 
-Swaziland                              sq        SZ     Swaziland                                
-Sweden                                 sw        SE     Sweden                                   
-Switzerland                            sz        CH     Switzerland                              
-Syria                                  sy        SY     Syrian Arab Republic                     
-Tajikistan                              ta       TJ     Tajikistan                               
-Tanzania                                tz       TZ     Tanzania, United Republic of             
-Tasmania                              tma        AU     Tasmania                                 
-Thailand                               th       TH     Thailand                                
-Togo                                   tg       TG     Togo                                    
-Tokelau                                tl       TK     Tokelau                                 
-Tonga                                  to       TO     Tonga                                   
-Trinidad and Tobago                    tr       TT     Trinidad and Tobago                     
-Tunisia                                ti       TN     Tunisia                                 
-Turkey                                 tu       TR     Turkey                                  
-Turkmenistan                           tk       TM     Turkmenistan                            
-Turks and Caicos Islands               tc       TC     Turks and Caicos Islands                
-Tuvalu                                 tv       TV     Tuvalu                                  
-Uganda                                 ug       UG     Uganda                                  
-Ukraine                                un       UA     Ukraine                                 
-United Arab Emirates                   ts       AE     United Arab Emirates                    
-England                               enk       GB     United Kingdom                          
-Scotland                              stk       GB     United Kingdom                          
-Wales                                 wlk       GB     United Kingdom                          
-United Kingdom                        xxk       GB     United Kingdom                          
-Northern Ireland                      nik       GB     United Kingdom                          
-United Kingdom Misc.                  uik       GB     United Kingdom                         
-United States                         xxu       US     United States                           
-Alabama                               alu       US     United States                           
-Alaska                                aku       US     United States                           
-Arizona                               azu       US     United States                           
-Arkansas                              aru       US     United States                           
-California                            cau       US     United States                           
-Colorado                              cou       US     United States                           
-Connecticut                           ctu       US     United States                           
-Delaware                              deu       US     United States                           
-Florida                                flu      US     United States                           
-Georgia                               gau       US     United States                           
-Hawaii                                hiu       US     United States                           
-Idaho                                 idu       US     United States                           
-Illinois                               ilu      US     United States                           
-Indiana                               inu       US     United States                           
-Iowa                                  iau       US     United States                           
-kansas                                ksu       US     United States                           
-Kentucky                             kyu       US    United States                           
-Louisiana                            lau       US    United States                           
-Maine                               meu        US    United States                           
-Maryland                            mdu        US    United States                           
-Massachusetts                       mau        US    United States                           
-Michigan                             miu       US    United States                           
-Minnesota                           mnu        US    United States                           
-Mississippi                         msu        US    United States                           
-Missouri                            mou        US    United States                           
-Montana                              mtu       US    United States                           
-Nebraska                             nbu       US    United States                           
-Nevada                               nvu       US    United States                           
-New Hampshire                        nhu       US    United States                           
-New Jersey                           nju       US    United States                           
-New Mexico                          nmu        US    United States                           
-New York (State)                     nyu       US    United States                           
-North Carolina                       ncu       US    United States                           
-North Dakota                         ndu       US    United States                           
-Ohio                                 ohu       US    United States                           
-Oklahoma                             oku       US    United States                           
-Oregon                               oru       US    United States                           
-Pennsylvania                         pau       US    United States                           
-Rhode Island                          riu      US    United States                           
-South Caroline                       scu       US    United States                           
-South Dakota                         sdu       US    United States                           
-Tennessee                            tnu       US    United States                           
-Texas                                txu       US    United States                           
-United States Misc.                  uc       US    United States                          
-Utah                                 utu       US    United States                           
-Vermont                              vtu       US    United States                           
-Virginia                             vau       US    United States                           
-Washington (State)                  wau        US    United States                           
-West Virginia                       wvu        US    United States                           
-Wisconsin                            wiu       US    United States                           
-Wyoming                             wyu        US    United States                           
-United States Misc. Pacific           up       PU    United States Misc. Pacific             
-Uruguay                                 uy        UY     Uruguay                                   
-Russia (Federation)                      ru       SU     USSR                                      
-Uzbekistan                              uz        UZ     Uzbekistan                                
-Vanuatu                                 nn        VU     Vanuatu                                   
-Various places                          vp        XX                                              
-Venezuela                               ve        VE     Venezuela                                 
-Victoria                                vra       AU     Victoria                                  
-Vietnam                                 vm        VN     Viet Nam                                  
-Virgin Islands of the United            vi        VI    Virgin Islands, U.S.                 採用 ISO 3166-1 (2011)的名稱  
-Wake Island                             wk        WK     Wake Island                               
-Wallis and Futuna                       wf        WF     Wallis and Futuna                    採用 ISO 3166-1 (2011)的名稱   
-West Bank of the Jordan                 wj        PS     Palestinian terroitory, occupied         
-Western Australia                      wea        AU     Western Australia                         
-Western Sahara                          ss        EH     Western Sahara                            
-Yemen                                   ye        YE     Yemen  
-Zambia                                  za        ZM     Zambia                                    
-Zimbabwe                                 rh       ZW     Zimbabwe                                 
-
-              
-
-              
-
-              
-
-                                                                                                                    11 
+﻿     af       AF   
+     aa       AL   
+     ae       DZ   
+     as       AS   
+     an       AD   
+     ao       AO   
+    am        AI   
+     ay       AQ   
+     aq       AG   
+     ag       AR   
+     ai       AM   
+    aw       AW    
+     at       AU   
+    aca       AU   
+   wea        AU   
+     au       AT   
+     aj       AZ   
+     bf       BS   
+     ba       BH   
+     bg       BD   
+     bb       BB   
+    bw        BY   
+     be       BE   
+     bh       BZ   
+    dm        BJ   
+    bm        BM   
+     bt       BT   
+     bo       BO   
+     bn       BA   
+     bs       BW   
+     bv       BV   
+     bl       BR   
+     bi       IO   
+    vb       VG    
+    bx        BN   
+    bu       BG    
+    uv        BF   
+     br      MM    
+    bd        BI   
+    cm       CM    
+    xxc      CA    
+    abc      CA    
+    bcc      CA    
+   dcu       CA    
+   mbc       CA    
+    nkc      CA    
+    nfc      CA    
+    ntc      CA    
+    nsc      CA    
+    nuc      CA    
+   onc       CA    
+    pic      CA    
+   quc       CA    
+    snc      CA    
+    ykc      CA    
+    cv        CV   
+     cj       KY   
+    cx        CF   
+    cd        TD   
+     cl       CL   
+    cc       CN    
+     pf      CN    
+    ch       TW  
+    xa        CX   
+    xb       CC    
+    ck       CO    
+    cq       KM    
+     cf      CG    
+       cg       CD 
+      cw        CK    
+      xga       AU    
+       cr       CR    
+       iv        CI   
+       ci       HR    
+       cu       CU    
+       cy       CY    
+       xr       CZ    
+       dk       DK    
+       ft        DJ   
+       dq       DM    
+       dr       DO    
+      em         TL   
+       ec       EC    
+       ua       EG    
+       es       SV    
+       eg       GQ    
+       ea       ER    
+       er        EE   
+       et        ET   
+       fk        FK   
+       fa       FO    
+       fj        FJ   
+       fi        FI   
+       fr        FR   
+       fg       GF    
+       fp        PF   
+      fs        TF    
+       go       GA    
+      gm        GM    
+       gs       GE    
+      gw        DE    
+       gh        GH   
+       gi        GI   
+       gr        GR   
+       gl        GL   
+       gd        GD   
+       gp        GP   
+       gu        GU   
+       gt        GT   
+       gv        GN   
+       pg       GW    
+       gy        GY   
+       ht        HT   
+       hm        HM   
+       vc        VA   
+       ho        HN   
+       hu        HU   
+        ic        IS  
+        ii       IN   
+        io       ID   
+        ir       IR   
+        iq       IQ   
+        iy       NT   
+        ie        IE  
+        is        IL  
+        it        IT  
+       jm        JM   
+       ja        JP   
+        ji       US   
+       jo        JO   
+       cb        KH   
+       kz        KZ   
+       ke        KE   
+       gb        KI   
+       kn        KP   
+       ko        KR   
+     kv       RS    
+     ku      KW     
+     kg       KG    
+     ls       LA    
+     lv       LV    
+     le       LB    
+     lo       LS    
+     lb       LR    
+     ly       LY    
+     lh       LI    
+     li       LT    
+     lu       LU    
+    xn        MK    
+    mg       MG     
+    mw       MW     
+    my        MY    
+    xc        MV    
+    ml        ML    
+    mm        MT    
+    xe        MH    
+    mq       MQ     
+    mu        MR    
+    mf        MU    
+     ot       YT    
+    mx        MX    
+    fm        FM    
+     xf       US    
+    mv        MD    
+    mc        MC    
+    mp        MN    
+    mo        ME    
+    mj        MS    
+    mr        MA    
+    mz        MZ    
+     sx       NA    
+     nu       NR    
+     np        NP   
+     ne        NL   
+     na        NL   
+      nl      NC    
+    xna       AU    
+     nz        NZ   
+     nq        NI   
+     ng        NE   
+     nr       NG    
+     xh       NU    
+     xx       XX    
+     nx        NF   
+     nw       MP    
+    xoa       AU    
+     no       NO    
+     mk       OM    
+     pk        PK   
+     pw       PW    
+     gz        PS   
+     pn        PA   
+     pp       PG    
+     py        PY   
+     pe        PE   
+     ph        PH   
+     pc        PN   
+      pl       PL   
+     po        PT   
+     pr        PR   
+     qa       QA    
+    qea       AU    
+     re        RE   
+     rm       RO    
+     ru       RU    
+      rw        RW  
+       xj       SH    
+      xd        KN    
+      xk        LC    
+       xl       PM    
+    xm        VC      
+      ws        WS    
+      sm        SM    
+       sf       ST    
+      su        SA    
+      sg        SN    
+      se        SC    
+       sl       SL    
+       si       SG    
+      xo        SK    
+      xv         SI   
+      bp        SB    
+      so        SO    
+      sa        ZA    
+     sxra       AU    
+      xs        GS    
+      sp        ES    
+      sh        ES    
+      xp        TW    
+      ce        LK    
+       sj       SD    
+       sr       SR    
+      sq        SZ    
+      sw        SE    
+      sz        CH    
+      sy        SY    
+       ta       TJ    
+       tz       TZ    
+     tma        AU    
+      th       TH     
+      tg       TG     
+      tl       TK     
+      to       TO     
+      tr       TT     
+      ti       TN     
+      tu       TR     
+      tk       TM     
+      tc       TC     
+      tv       TV     
+      ug       UG     
+      un       UA     
+      ts       AE     
+     enk       GB     
+     stk       GB     
+     wlk       GB     
+     xxk       GB     
+     nik       GB     
+     uik       GB     
+     xxu       US     
+     alu       US     
+     aku       US     
+     azu       US     
+     aru       US     
+     cau       US     
+     cou       US     
+     ctu       US     
+     deu       US     
+      flu      US     
+     gau       US     
+     hiu       US     
+     idu       US     
+      ilu      US     
+     inu       US     
+     iau       US     
+     ksu       US     
+    kyu       US    
+    lau       US    
+   meu        US    
+   mdu        US    
+   mau        US    
+    miu       US    
+   mnu        US    
+   msu        US    
+   mou        US    
+    mtu       US    
+    nbu       US    
+    nvu       US    
+    nhu       US    
+    nju       US    
+   nmu        US    
+    nyu       US    
+    ncu       US    
+    ndu       US    
+    ohu       US    
+    oku       US    
+    oru       US    
+    pau       US    
+     riu      US    
+    scu       US    
+    sdu       US    
+    tnu       US    
+    txu       US    
+    uc       US    
+    utu       US    
+    vtu       US    
+    vau       US    
+   wau        US    
+   wvu        US    
+    wiu       US    
+   wyu        US    
+     up       PU    
+       uy        UY 
+        ru       SU 
+       uz        UZ 
+       nn        VU 
+       vp        XX 
+       ve        VE 
+       vra       AU 
+       vm        VN 
+       vi        VI 
+       wk        WK 
+       wf        WF 
+       wj        PS 
+      wea        AU 
+       ss        EH 
+       ye        YE 
+       za        ZM 
+        rh       ZW 
