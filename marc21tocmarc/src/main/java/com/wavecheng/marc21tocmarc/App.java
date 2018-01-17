@@ -52,15 +52,16 @@ public class App
 //    	transformer.transform(input, output);
 //    	
 //        String marc21 = "";
-//        String filename ="20171205_450880_demo-vzhao_Full-MARC8";
-//        //filename = "20171117_423294_ntuedu_Full-MARC8";
-//        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
-//        while(mr.hasNext()) {
-//        	Record r = mr.next();       	
-//        	//System.out.println(r.toString());
-//        }         
+        String filename ="20171205_450880_demo-vzhao_Full-MARC8";
+        filename = "c:/cmarc";
+        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
+        while(mr.hasNext()) {
+        	Record r = mr.next();       	
+        	System.out.println(r.toString());
+        }         
 //        testRuleJSON();
-    	runTrans();
+    	
+    	//runTrans();
     }
 
     private static void runTrans() throws Exception, JsonIOException, FileNotFoundException {

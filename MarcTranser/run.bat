@@ -1,0 +1,1 @@
+java -jar marctrans.jar -input full8.mrc -output cmarc.mrc
