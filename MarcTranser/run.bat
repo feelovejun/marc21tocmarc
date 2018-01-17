@@ -1,1 +1,1 @@
-java -jar marctrans.jar -input full8.mrc -output cmarc.mrc
+java -jar marctrans.jar -input 20171117_423294_ntuedu_Full-MARC8.mrc -output 20171117_423294_ntuedu_CMARC.mrc

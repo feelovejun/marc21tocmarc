@@ -36,21 +36,7 @@ public class App
 	
     public static void main( String[] args ) throws Exception
     {
-    	if(args.length <2 ) {
-    		System.out.println("Usage: -input in.mrc8 -output out.cmarc -rule rules.json");	
-    		System.exit(-1);
-    	};
-    	for(String s : args) {
-    		log.debug(s);
-    	}
-    	String input = "";
-    	String output = "";
-    	String rules = "";
-    	
-//    	TransRule rules1 = new TransRule();
-//    	MarcTransformer transformer = new MarcTransformer(rules1);
-//    	transformer.transform(input, output);
-//    	
+
 //        String marc21 = "";
         String filename ="20171205_450880_demo-vzhao_Full-MARC8";
         filename = "c:/cmarc";

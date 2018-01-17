@@ -388,7 +388,7 @@ public class MarcHardcodeTransformer {
 		for(Subfield sub: df.getSubfields()) {
 			if(sub.getCode() == 'h') {
 				//to 204a and remove "[]"
-				DataField df1 = buildDataField("204",'1',' ','a',sub.getData().replaceAll("(\\[|\\]|/)",""));
+				DataField df1 = buildDataField("204",'1',' ','a',sub.getData().replaceAll("(\\[|\\]|/|:)",""));
 				log.debug("245h => 204a: " + df1.toString());
 				fieldsList.add(df1);
 			}else if(sub.getCode() == 'a') {
