@@ -144,11 +144,7 @@ public class MarcHardcodeTransformer {
 					handle504(df,fieldsList);
 					break;
 				case "505":
-					df.setTag("327");	
-					df.setIndicator1(' ');
-					df.setIndicator2(' ');
-					log.debug("505 => 327:" + df.toString());
-					fieldsList.add(df);
+					handle505(df,fieldsList);
 					break;
 				case "520":
 					df.setTag("330");
@@ -252,6 +248,16 @@ public class MarcHardcodeTransformer {
 		return new HashMap<String, String>();
 	}
 
+	private void handle505(DataField df, List<VariableField> fieldsList) {
+		DataField nwDf = new DataFieldImpl("327", ' ',' ');
+		for(Subfield sub: df.getSubfields()) {
+			sub.setData(sub.getData().replace("--", "-"));
+			nwDf.addSubfield(sub);		
+		}	
+		log.debug("505 => 327:" + nwDf.toString());
+		fieldsList.add(nwDf);	
+	}
+	
 	private void handle655(DataField df, List<VariableField> fieldsList) {
 		DataField nwDf = new DataFieldImpl("610", '1',' ');
 		for(Subfield sub: df.getSubfields()) {

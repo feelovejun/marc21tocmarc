@@ -6,9 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
-public class App 
+public class MarcTransApp 
 {
-	private static Logger log = LoggerFactory.getLogger(App.class);
+	private static Logger log = LoggerFactory.getLogger(MarcTransApp.class);
 	
     public static void main( String[] args ) throws IOException
     {
