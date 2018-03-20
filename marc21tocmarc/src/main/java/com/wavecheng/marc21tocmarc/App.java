@@ -47,13 +47,15 @@ public class App
         }         
 //        testRuleJSON();
     	
-    	//runTrans();
+    	runTrans();
     }
 
     private static void runTrans() throws Exception, JsonIOException, FileNotFoundException {
     	Gson gson = new Gson();
     	String input ="20171205_450880_demo-vzhao_Full-MARC8.mrc";
     	String output ="output.txt";
+    	
+    	input = "20171205_450881_demo-vzhao_Express-MARC8.mrc";
     	
     	String path = App.class.getClassLoader().getResource("rules.json").getPath();
         TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);

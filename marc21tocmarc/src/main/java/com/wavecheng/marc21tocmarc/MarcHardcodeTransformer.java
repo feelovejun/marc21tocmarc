@@ -144,6 +144,20 @@ public class MarcHardcodeTransformer {
 				case "504":
 					handle504(df,fieldsList);
 					break;
+				case "505":
+					df.setTag("327");
+					df.setIndicator1(' ');
+					df.setIndicator2(' ');
+					log.debug("505 => 327:" + df.toString());
+					fieldsList.add(df);
+					break;
+				case "520":
+					df.setTag("330");
+					df.setIndicator1(' ');
+					df.setIndicator2(' ');
+					log.debug("520 => 330:" + df.toString());
+					fieldsList.add(df);
+					break;	
 				case "513":
 				case "514":
 				case "518":
