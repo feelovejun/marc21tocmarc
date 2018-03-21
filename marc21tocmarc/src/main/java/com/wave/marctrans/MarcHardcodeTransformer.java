@@ -95,6 +95,7 @@ public class MarcHardcodeTransformer {
 	private void handleDataFields(Record record, List<VariableField> fieldsList) {
 		List<DataField> dfs =  record.getDataFields();
 		for(DataField df : dfs) {
+			try {
 			switch(df.getTag()) {
 				case "020":
 					handle020(df,fieldsList);
@@ -184,6 +185,9 @@ public class MarcHardcodeTransformer {
 					log.debug("856 => 856:" + df.toString());
 					fieldsList.add(df);	
 					break;
+			}
+			}catch(Exception ex) {
+				log.error("handle data field ex: " + df.getTag() + "=>" + ex);
 			}
 		}
 	}

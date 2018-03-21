@@ -40,11 +40,11 @@ public class App
 //        String marc21 = "";
         String filename ="20171205_450880_demo-vzhao_Full-MARC8";
         filename = "c:/cmarc";
-        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
-        while(mr.hasNext()) {
-        	Record r = mr.next();       	
-        	System.out.println(r.toString());
-        }         
+//        MarcReader mr = new MarcStreamReader(new FileInputStream(filename+ ".mrc"));
+//        while(mr.hasNext()) {
+//        	Record r = mr.next();       	
+//        	System.out.println(r.toString());
+//        }         
 //        testRuleJSON();
     	
     	runTrans();
@@ -55,7 +55,7 @@ public class App
     	String input ="20171205_450880_demo-vzhao_Full-MARC8.mrc";
     	String output ="output.txt";
     	
-    	input = "20171205_450881_demo-vzhao_Express-MARC8.mrc";
+    	input = "20180321_567329_demo-vzhao_Full-MARC8_5.mrc";
     	
     	String path = App.class.getClassLoader().getResource("rules.json").getPath();
         TransRule trr = gson.fromJson(new FileReader(path), TransRule.class);

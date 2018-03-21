@@ -64,7 +64,7 @@ public class MarcHardcodeTransformer {
 	        		cmarc.addVariableField(f);
 	        	}
 	        	log.info(cmarc.toString());
-	        	//writer.write(cmarc);
+	        	writer.write(cmarc);
 	        	success++;
 	        	
         	}catch(Exception ex) {
@@ -96,6 +96,7 @@ public class MarcHardcodeTransformer {
 	private void handleDataFields(Record record, List<VariableField> fieldsList) {
 		List<DataField> dfs =  record.getDataFields();
 		for(DataField df : dfs) {
+			try {
 			switch(df.getTag()) {
 				case "020":
 					handle020(df,fieldsList);
@@ -189,6 +190,9 @@ public class MarcHardcodeTransformer {
 					log.debug("856 => 856:" + df.toString());
 					fieldsList.add(df);	
 					break;
+			}
+			}catch(Exception ex) {
+				log.error("handle data field ex:" + ex);
 			}
 		}
 	}
